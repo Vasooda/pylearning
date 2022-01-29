@@ -1,0 +1,83 @@
+#short circuiting
+
+is_Friend = True
+is_User = True
+
+print('---------AND STATEMENT-------------')
+if is_Friend and is_User:
+  print('best friends forever!')
+
+print('---------OR STATEMENT-------------')
+
+#if either condition is true run the code -- the difference is that since 'or' only cares if either one is true or false -- it will evaluate the first condition and if its true then it will print regardless of the other conditions
+
+if is_Friend or is_User:
+  print('best friends forever!')
+
+
+print('--------- LOGICAL OPERATOR -------------')
+
+print()
+
+
+print(4 > 5)
+print(4 < 5)
+print( 4 == 5) # = is used to assign to a variable -- interpreter tryign to   assign a variable to the value of 4 so you need to use == for comparison instead
+
+print('a'>'A') #when comparing characters interpreter conversts it to an integer accordingly to the ASCII table --- so a evaluate to 97 and A evalutes to 65
+
+print( 1 >= 0) #greater than
+print( 1 <= 0) #less than
+print (1 != 0)
+print (0 != 0)
+
+print (not(True)) #not is a keyword and a function 
+print (not(1 == 1))
+
+print('--------- LOGICAL OPERATOR EXERCISE -------------')
+
+is_magician = False
+is_expert = True
+
+
+
+print('---------EXERCISE-------------')
+
+#check if magician AND expert: "you are a master magician"
+#check if magician but not expert: "at least you're getting there"
+#check if not a magician: "you need magic powers"
+
+is_Magician = True
+is_Expert = True
+
+if is_Magician and is_Expert:
+  print('You are a master magician')
+elif is_Magician and not(is_Expert):
+  print('at least you\'re getting there')
+elif not(is_Magician):
+  print('you need some magic')
+else:
+  print('forget about it')
+
+print('--------- is versus == -------------')
+
+print(True is 1) # is -- a keyword in python --- it checks the location in memory where the values is stored  ...is it the same?
+print(True == 1) #comparison operator comparing two values qulaity in values 
+
+
+print([] is []) #everytime a list is created its added in memory so both these empty lists are not the same so will evaluate to false
+
+print([] == []) #evaluates equality
+
+
+a = [1,2,3]
+b = [1,2,3]
+
+print(a is b) 
+print(a == b) #checks value
+
+
+
+
+
+

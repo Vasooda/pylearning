@@ -1,0 +1,44 @@
+# Conditional Logic
+# Indentation and spaces have relevance
+
+is_old = False  #default value set
+is_licenced = True
+
+#truthy and Falsy
+  #'blank' and 0.0.0,empty data types, fractions and decimals, None evaluate to false 
+  # all values not false will evaluate to true
+
+
+#code block within indentation -- this block can be skipped based on condition
+if is_old:
+    print('you are old enough to drive')
+elif is_licenced:
+    print('you can drive now')
+else:
+    print('you\'re not old enough to drive')
+
+# or you can use 'and'
+#if is_old and is_licenced:
+#    print('drive away!')
+
+#password = '123'
+#username = 'vasooda'
+
+#if password and username:
+#  print('you can login')
+#else:
+#  print('you don\'t have the credentials to login')
+
+
+
+print('-------------------------------------------------')
+
+#Ternary Operator --- can only use on sepcifc conditional login -- mostly a shortcut -- conditional expressions 
+
+#condition_if_true if condition else condition_if_else
+
+is_friend = True 
+can_message = "message allowed" if is_friend else "not allowed to message"
+print(can_message)
+
+print('-------------------------------------------------------')

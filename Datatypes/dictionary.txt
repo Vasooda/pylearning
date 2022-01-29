@@ -1,0 +1,93 @@
+
+#dictionary -- a data type also a data structure like hash tables -- its a way to organize your data  
+
+#unordered key value pair - key is string used to grab the value -- unordered key value pair so they are not stored together in memory 
+
+dict 
+
+dictionary = {
+  'a':[1,2,3],
+  'b':'hello',
+  'c': True
+}
+
+my_list = {
+  'a':[1,2,3],
+  'b':'hello',
+  'c': True
+},
+{
+  'a':[4,5,6],
+  'b':'bye',
+  'c': False
+}
+
+print(my_list[0]['a'][2])
+#print(dictionary['c'])
+
+x = "hello"[0]
+
+print(x)
+
+#must know which data structure to use when and understand what the tradeoffs are -- it takes practice and experience 
+
+#dictionary --- not sorted -- holds more values becuase it holds both keys and values i.e. you can store lists within dictionaries
+
+#list --- is sorted --- its only an index and the value of that key
+
+#dictionary key needs to be immutable --- so the key needs to be a value that cannot change so a list can't be a key because it can be changed -- key is usually descriptive like a string and has to be unique so can only exist once
+
+dict_keys = {
+  'basket':[1,2,3],
+  True:'hello',
+  'c': True
+}
+
+print(dict_keys['basket'])
+
+#.get method on the object(dictionary) -- grab 'd' from dictionary if it doesn't exist then add a default value 55
+
+print(dict_keys.get('d',55))
+
+#another way to create a dictionary but not very common
+user2 = dict(name='Vasooda')
+print(user2)
+
+#look for item in dictionary
+
+print('hello' in dict_keys.values())
+print('basket' in dict_keys.keys())
+print(dict_keys.items()) #grabs the entire item -- key value pair
+
+
+
+user = {
+  'basket':[1,2,3],
+  'greet':'hello',
+  'age': 20
+}
+
+#clear -- doesn't return it inplace removes whatever we have already
+
+#print(user.clear)
+
+##user.clear()
+#print(clear)
+
+#copy --- allows us to copy a dictionary
+
+user2 = user.copy()
+print(user)
+print(user2)
+
+#pop and popitem
+
+#print(user.pop('age'))
+
+print(user.popitem())
+print(user)
+
+#update --- updates a key value
+
+print(user.update({'age':55}))
+print(user)

@@ -1,0 +1,151 @@
+#list  - collection of items -- a data structure -- a way to organize that collection of items. A container around your program that has different  different pros and cons relating to accessing that data, removing that data, writing data etc. 
+
+#square brackets contain data
+
+li = [1,2,3,4,5]
+li2 = ['a','b','c','d']
+li3 = [1,2,'a',True]  
+
+#data structure <--  
+
+amazon_cart = ['notebooks','sunglasses']
+
+print(amazon_cart[0])
+
+
+#list slicing
+
+target_cart = [
+  'notebooks',
+  'sunglasses', 
+  'toys',
+  'grapes']
+
+print(target_cart[0::2]) #start:stop:step
+
+#lists are mutable unlike strings because at the index you can change what you want
+
+target_cart[0] = 'laptop'
+
+new_cart = print(target_cart[0:3]) #list slicing creates a new copy of original list you can now assign this to a variable -- list is mutable becuase you can change at the index the value
+
+#copy list 
+new_cart = target_cart[:]
+
+#modify list
+new_cart = target_cart
+
+new_cart[0] = 'gum'
+print(new_cart)
+
+print(target_cart) 
+
+
+#Matrix - 2D lists -- array in an array
+
+matrix =  [ [1,2,3],
+            [2,4,6],
+            [7,8,9]
+          ]
+#matrix's allow us to do heavy calculation -- when accessing a multi-dimentaional list 
+
+print(matrix[1][2]) #display's value of row, then column from matrix 
+
+#built in function - length 
+print(len(target_cart))
+
+#method an action that is owned by something i.e. specific to a data type
+
+#adding -- 
+target_cart.append('flowers')
+new_list = target_cart
+
+print(target_cart)
+print(new_list)
+
+
+#insert - modified the list in place doesn't creat a new copy of the list
+target_cart.insert(0,'flowers')
+new_list = target_cart
+
+print(target_cart)
+print(new_list)
+
+#extend -- takes an iterable you can loop over
+
+target_cart.extend(amazon_cart)
+
+print(target_cart)
+
+
+#delete - give it the index you want to remove -- it returns what you've removed 
+target_cart.pop()
+target_cart.pop()
+target_cart.pop(0)
+target_cart.pop(1)
+print(target_cart)
+
+#remove -- give it the value you want to remove -- it works in place it doesn't return a value --- it only changes 
+target_cart.remove('toys')
+print(target_cart)
+
+print(f'this is my target cart:{target_cart}')
+#clear
+#new_list = target_cart.clear()
+#print(new_list)
+
+basket = [1,2,3,4,5]
+
+print(basket.index(2))
+
+#keyword 
+
+basket_two = ['a','b','c','x','d']
+print('d' in basket_two) #check if item is in list
+
+print('i' in 'hi my name is Vasooda')
+
+#count 
+print(basket_two.count('d'))
+
+#sort --- modified the list in place
+
+print(basket_two.sort()) #no return value
+
+#basket_two.sort()
+
+print(sorted(basket_two)) #creates a new copy of the basket and then performs sort on the new list
+
+print(basket_two)
+
+#reverse
+
+basket.sort()
+#basket.reverse() modifies original
+print(basket)
+
+print(basket[::-1]) #list slicing creates a new version
+
+#range
+print(list(range(1,100)))
+
+#.join -- string method i.e takes a list and joins with a SyntaxWarning
+
+sentence = ' '
+new_sentence = sentence.join(['hi','my','name','is','jojo'])
+
+#list unpacking
+
+a,b,c, *other, d = [1,2,3,4,5,6,7,8,9]
+
+print(a)
+print(b)
+print(c)
+print(other)
+print(d)
+
+
+#None #absence of value aka null 
+
+weapons = None
+print(weapons)
