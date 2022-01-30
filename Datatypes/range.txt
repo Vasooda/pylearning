@@ -1,0 +1,24 @@
+
+#use range to loop over things 10 times
+for number in range(0,10):
+  print(number)
+
+#you don't have to returnn variable you can return text
+for number in range(0,10):
+  print('email email list')
+
+#you don't need to speicify a variable in those cases you can just use underscore
+for _ in range(0,10):
+  print(_)
+
+print('------------------')
+#range has third step over parameter 
+for _ in range(10,0,-2):
+  print(_)
+
+print('------------------')
+
+#create a range with 10 objects then convert it to a list and loop it 2 times
+
+for _ in range(2):
+  print(list(range(10)))

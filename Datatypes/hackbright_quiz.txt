@@ -1,0 +1,78 @@
+def show_each_name(names):
+  for name in names:
+    print(names, end=' | ')
+      
+show_each_name(names=['sarah','mary','alice','bob'])
+
+
+toppings = True
+food = "ice cream"
+
+if food == "ice cream" and toppings:
+  print("add sprinkles!")
+if not toppings:
+  print("no toppings please!")
+
+
+hunger = 8
+
+if hunger > 5:
+  print("I'm hungry")
+if hunger < 6:
+  print("I am not hungry")
+if hunger > 7:
+  print("feed me now")
+
+
+jar = "full"
+print(jar == "empty")
+
+
+animals = ['birds', 'cat', 'dog','fish']
+for animals in animals:
+  print(animals)
+
+cats = ['birds', 'cat', 'dog']
+print(cats[1])
+
+greeting = "Howdy"
+print(greeting + " friend")
+
+friends = ["Sam", "Alice", "Mary"]
+friend = friends[1]
+
+if friend == "Alice":
+  print(friends)
+
+lucky_num = 5
+if lucky_num < 3:
+    print(lucky_num)
+
+guess = 9
+answer = 7
+
+if guess == answer:
+  print("You guessed the answer!")
+elif guess < answer:
+  print("too low")
+else:
+  print("too high")
+
+speed = 5
+
+if speed < 5:
+  print("too slow")
+if speed > 5:
+  print("too fast!")
+
+name = "Mary"
+print(f"welcome {name}")
+
+animals = ['birds', 'cat', 'dog','fish']
+  #if (animals < 5):
+print(animals)
+
+
+friend = "Alicey"
+#if friend = "Alice":
+print(friend)

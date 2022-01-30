@@ -1,0 +1,43 @@
+#functions use to uphold DRY principle 
+
+
+### parameters inside bracket
+#default parameters allows us to keep our functions safe becuase there is a default variable
+def say_hello(name='Darth Vader', emoji='😡'):
+  print(f'helllllooo {name} {emoji}')
+
+#positional arguments -- used as the actual values provided to a function --easy to read 
+say_hello('Vasooda','🥰') #aka call the function
+say_hello('🥰 ','Vasooda') #aka call the function
+
+#keyword arguments -- allow us to not worry about the position
+say_hello(emoji= '🥳', name='bebe')
+#default parameters
+say_hello()
+say_hello('Timmy')
+
+print('------------------------------\n\n\n')
+
+tree = [
+  [0,0,0,1,0,0,0],
+  [0,0,1,1,1,0,0],
+  [0,1,1,1,1,1,0],
+  [1,1,1,1,1,1,1],
+  [0,0,0,1,0,0,0],
+  [0,0,0,1,0,0,0]
+]
+
+def show_tree():
+  for row in tree:
+    for column in row:
+      if column == 1:
+        print('*', end = '')
+      else:
+        print(' ', end = '')
+    print('')
+
+
+show_tree()
+
+print(show_tree) #only outputs location of function
+

@@ -1,0 +1,53 @@
+
+print('-------- WHILE LOOP ----------')
+
+#infinate loop has no condition to stop hecen you need a break
+#i = 0 
+#while i < 50:
+ # print(i)
+
+#add a break
+i = 0 
+while i < 50:
+  print(i)
+  break
+
+#add a condition that will turn false
+i = 0 
+while i < 50:
+  print(i)
+  i = i + 1
+else:
+  print('done with all the work')
+
+#while v. for -- when to use what 
+#in for loop 
+
+my_list = [1,2,3]
+
+#for loops are simpler 
+for item in my_list:
+  print(item)
+  continue
+
+#while loops are flexible -- but you have to create a variable and add condition or break
+i = 0
+while i < len(my_list):
+  print(my_list[i])
+  i += 1
+
+#for iterating over iterable objects for loops are great
+
+#if your not sure how you many times you want to loop or how long it will take for looping -- while something is true keep looping
+
+#example
+while True:
+  response = input('say something: ')
+  if (response == 'bye'):
+    break
+
+#break breaks out of the current conditiona loop
+
+#continue means go to the top of the loop again until the loop ends
+
+#pass doesn nothing -- it passes to the next line -- rarely used -- its a good way to have a placeholder to fill something for the loop - 

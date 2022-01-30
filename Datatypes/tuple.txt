@@ -1,0 +1,27 @@
+#tuple --- lists that cannot be modified -- immutable once you create it its the way it is you can't sort it or replace
+
+#advantages -- it makes this easier and efficient, makes code more predictable, its safe because it can't be easily changed -- faster than lists -- if you don't need a list to change that a great oppurtunity to use tuple
+
+#a tuple can be used as a key in dictionaries
+
+my_tuple = (1,2,3,4,5)
+
+#print(my_tuple[2])
+#print(5 in my_tuple)
+#print(new_tuple)
+
+new_tuple = my_tuple[1:2]
+
+x,y,z, *other = (1,2,3,4,5)
+print(x)
+
+print(my_tuple.count(5)) #count
+print(my_tuple.index(4)) #index
+print(len(my_tuple)) #length
+
+
+
+
+
+
+
